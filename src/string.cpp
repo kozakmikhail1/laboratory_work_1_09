@@ -25,10 +25,9 @@ void String::Show()
 
 void String::Fill()
 {
-
   date = Get_Line();
   lenght = Find_Lenght(date);
-  capacity = lenght;
+  capacity = lenght + 1;
 }
 
 void String::Concatenate_strs(String* str)

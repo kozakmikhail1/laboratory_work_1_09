@@ -6,7 +6,7 @@ char * Get_Line()
   char *str{};
   char symbol;
 
-  while(std::cin.get(symbol), symbol != '\n')
+  while((symbol = std::cin.get()) != '\n')
   {
     int lenght = Find_Lenght(str);
     auto temp = new char [lenght + 2];
@@ -22,6 +22,7 @@ char * Get_Line()
   }
   return str;
 }
+
 int Find_Lenght(const char *str_)
 {
   if(str_ == nullptr)

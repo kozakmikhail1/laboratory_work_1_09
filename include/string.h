@@ -13,8 +13,8 @@ class String
   String();
   explicit String(char *str);
 
-  int Get_Lenght(){return lenght;}
-  char Get_Symbol(int index){return date[index];}
+  int Get_Lenght() const {return lenght;}
+  char Get_Symbol(int index) const {return date[index];}
 
   void Show();
   void Fill();
